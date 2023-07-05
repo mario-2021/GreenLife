@@ -1,0 +1,40 @@
+.shopButton {
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.shopButton .buttonShop {
+  width: 180px;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #d3222a;
+  color: #fff;
+  border: 2px solid #d3222a;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.shopButton .buttonShop:hover {
+  background-color: #fff;
+  color: #d3222a;
+}
+
+.newOverlay {
+  background-color: rgba(86, 118, 50, 0.6) !important;
+  color: #fff !important;
+}
+
+.contactButt {
+  width: 100px;
+  border: 2px solid #567632;
+  background-color: #567632;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  height: 50px;
+}
+.contactButt:hover {
+  background-color: #fff;
+  color: #567632;
+}

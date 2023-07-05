@@ -1,0 +1,48 @@
+@use '../help/variable' as *;
+
+@use '../pages/homepage' as *;
+
+@use '../pages/about' as *;
+
+// $maxMobile
+// $maxSmall
+// $maxMedium
+
+
+.menu {
+    .links{
+        @media (max-width: $maxMedium) {
+            display: none !important;
+        }
+        &.open {
+            @media (max-width: $maxMedium) {
+                background-color: #FFF !important;
+                padding: 10px !important;
+                display: block !important;
+                position: absolute !important;
+                left: 0 !important;
+                top: 50px !important;
+                width: 100% !important;
+                border-radius: 4px !important;
+                text-align: left !important;
+            }
+            li {
+                @media (max-width: $maxMedium) {
+                    display: block !important;
+                    margin: 10px !important;
+                }
+                a {
+                    @media (max-width: $maxMedium) {
+                        color: $flatGreen !important;
+                        font-weight: bold !important;
+                    }
+                }
+            }
+        }
+    }
+    .toggle-menu {
+        @media (max-width: $maxMedium) {
+            display: inline-block !important;
+        }
+    }
+}

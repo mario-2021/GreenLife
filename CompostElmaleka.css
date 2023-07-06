@@ -131,6 +131,7 @@ body {
 }
 .ourservices .serviceCont .fotoHeight {
   height: 100%;
+  width: 100%;
 }
 .ourservices .serviceCont .info h3 {
   color: #044750;

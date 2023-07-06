@@ -1,0 +1,35 @@
+@use '../help/variable' as *;
+@use '../pages/homepage' as *;
+
+.background-image-about {
+    color: $flatWhite;
+    .firstBack {
+        width: 100%;
+        height: 535px !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 535px !important;
+        background-color: rgb(158 158 158 / 70%);
+        z-index: -1;
+    }
+}
+
+.about {
+    .about-head {
+        color: $darkGreen;
+    }
+    .about-info {
+        color: $darkGreen;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+    }
+}

@@ -152,6 +152,15 @@ body {
                 font-size: 1.25rem;
             }
         }
+        .fotoOneNew {
+            margin-top: 85px;
+            border: 1px solid black;
+            border-radius: 5%;
+            -webkit-border-radius: 5%;
+            -moz-border-radius: 5%;
+            -ms-border-radius: 5%;
+            -o-border-radius: 5%;
+        }
     }
     .newSerCon {
         padding: 2px;
@@ -160,8 +169,12 @@ body {
         height: 610px;
     }
     .newSerConInfo {
-        height: 389px;
+        height: 93%;
         line-height: 1.5rem;
+    }
+    .lastSerHei {
+        padding-top: 70px;
+        padding-bottom: 215px;
     }
 }
 
@@ -207,6 +220,17 @@ body {
     }
 }
 
+.background-image6{
+    .secondBack {
+        width: 100%;
+        height: 945px;
+        position: absolute;
+        top: 3055px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
 .gallery {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -216,8 +240,8 @@ body {
         background-color: #c6c3c2;
         border: 2px solid #2ebb9e;
         border-radius: 50%;
-        width: 130px;
-        height: 110px;
+        width: 195px;
+        height: 165px;
         padding-top: 10px;
         margin-left: 45%;
     }
@@ -238,6 +262,11 @@ body {
             border: 1px solid white;
             border-radius: 10%;
             box-shadow: inset 0px 0px 14px 18px #c6c3c2;
+        }
+        .videoDev {
+            border: 2px solid #020202;
+            border-radius: 25px;
+            margin-top: 30px;
         }
     }
 }
@@ -289,3 +318,45 @@ body {
     font-family: Arial, Tahoma;
     user-select: none;
 }
+
+.footer {
+    background-color: #222222;
+    .contact {
+        color: #cfd5d6;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+    }
+    .fotPhone {
+        color: #cfd5d6;
+        &:hover {
+            color: $flatGreen;
+            font-size: 1.8rem;
+            font-weight: bolder;
+        }
+    }
+    .conEmail {
+        color: #cfd5d6;
+        &:hover {
+            color: $flatGreen;
+            font-size: 1.8rem;
+            font-weight: bolder;
+        }
+    }
+    .main-btn {
+        background-color: #cfd5d6;
+        color: #0c4750;
+        padding: 0.5rem 1rem;
+        font-weight: lighter;
+        text-align: center;
+        cursor: auto;
+    }
+    .logo {
+        color: #0c4750;
+        font-size: .75rem;
+        line-height: 1.5rem;
+        font-weight: lighter;
+        padding-bottom: 2px;
+    }
+}
+

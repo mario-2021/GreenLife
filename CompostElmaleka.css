@@ -144,6 +144,15 @@ body {
   margin-top: 10px;
   font-size: 1.25rem;
 }
+.ourservices .serviceCont .fotoOneNew {
+  margin-top: 85px;
+  border: 1px solid black;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
 .ourservices .newSerCon {
   padding: 2px;
 }
@@ -151,8 +160,12 @@ body {
   height: 610px;
 }
 .ourservices .newSerConInfo {
-  height: 389px;
+  height: 93%;
   line-height: 1.5rem;
+}
+.ourservices .lastSerHei {
+  padding-top: 70px;
+  padding-bottom: 215px;
 }
 
 .collNumb6 .newSerCon {
@@ -189,6 +202,15 @@ body {
   z-index: -1;
 }
 
+.background-image6 .secondBack {
+  width: 100%;
+  height: 945px;
+  position: absolute;
+  top: 3055px;
+  left: 0;
+  z-index: -1;
+}
+
 .gallery {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -199,8 +221,8 @@ body {
   background-color: #c6c3c2;
   border: 2px solid #2ebb9e;
   border-radius: 50%;
-  width: 130px;
-  height: 110px;
+  width: 195px;
+  height: 165px;
   padding-top: 10px;
   margin-left: 45%;
 }
@@ -223,6 +245,11 @@ body {
   border-radius: 10%;
   -webkit-box-shadow: inset 0px 0px 14px 18px #c6c3c2;
           box-shadow: inset 0px 0px 14px 18px #c6c3c2;
+}
+.gallery .images-box .videoDev {
+  border: 2px solid #020202;
+  border-radius: 25px;
+  margin-top: 30px;
 }
 
 .popup-overlay {
@@ -276,6 +303,78 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.footer {
+  background-color: #222222;
+}
+.footer .contact {
+  color: #cfd5d6;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+.footer .fotPhone {
+  color: #cfd5d6;
+}
+.footer .fotPhone:hover {
+  color: #58B19F;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.footer .conEmail {
+  color: #cfd5d6;
+}
+.footer .conEmail:hover {
+  color: #58B19F;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.footer .main-btn {
+  background-color: #cfd5d6;
+  color: #0c4750;
+  padding: 0.5rem 1rem;
+  font-weight: lighter;
+  text-align: center;
+  cursor: auto;
+}
+.footer .logo {
+  color: #0c4750;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  padding-bottom: 2px;
+}
+
+.background-image-about {
+  color: #fff;
+}
+.background-image-about .firstBack {
+  width: 100%;
+  height: 535px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.background-image-about .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 535px !important;
+  background-color: rgba(158, 158, 158, 0.7);
+  z-index: -1;
+}
+
+.about .about-head {
+  color: #044750;
+}
+.about .about-info {
+  color: #044750;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 3.5rem;
 }
 
 @media (max-width: 991px) {

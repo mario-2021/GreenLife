@@ -46,3 +46,22 @@
 //         }
 //     }
 // }
+
+.nav-bar {
+    .navbar-brand{
+        @media (max-width: $maxMedium) {
+            margin-left: 105px;
+        }
+    }
+    .links {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+}
+.ourservices {
+    h2 {
+        @media (max-width: $maxMedium) {
+            margin-left: 105px;
+        }
+    }
+}

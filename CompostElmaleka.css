@@ -375,3 +375,19 @@ body {
   font-weight: 500;
   line-height: 3.5rem;
 }
+
+@media (max-width: 991px) {
+  .nav-bar .navbar-brand {
+    margin-left: 105px;
+  }
+}
+.nav-bar .links {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .ourservices h2 {
+    margin-left: 105px;
+  }
+}

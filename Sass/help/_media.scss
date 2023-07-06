@@ -79,10 +79,10 @@
                             margin: 10px;
                             transition-duration: .3s;
                             border: none;
-                            &:hover {
-                                font-size: 2rem;
-                                border: none;
-                            }
+                            // &:hover {
+                            //     font-size: 2rem;
+                            //     border: none;
+                            // }
                         }
                         a {
                             @media (max-width: $maxSmall) {

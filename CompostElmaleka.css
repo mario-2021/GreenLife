@@ -474,10 +474,6 @@ body {
             transition-duration: 0.3s;
     border: none;
   }
-  .nav-bar .links.open li:hover {
-    font-size: 2rem;
-    border: none;
-  }
 }
 @media (max-width: 767px) and (max-width: 767px) {
   .nav-bar .links.open li a {

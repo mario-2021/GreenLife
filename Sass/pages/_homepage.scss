@@ -10,7 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     // width: 1262px;
     margin: 0;
-    background-color: #bdc5c7b8;
+    // background-color: #bdc5c7b8;
 }
 
 .clearfix {
@@ -45,7 +45,7 @@ body {
     }
     .links {
         margin-left: 62%;
-        margin-top: 20px;
+        margin-top: -45px;
         padding: 10px;
         li {
             display: inline-block;
@@ -175,9 +175,19 @@ body {
         height: 93%;
         line-height: 1.5rem;
     }
+    .newColSer {
+        background-color: #d0d0df;
+    }
     .lastSerHei {
         padding-top: 70px;
         padding-bottom: 215px;
+    }
+    .newSerTable {
+        color: $darkGreen;
+        font-weight: bold;
+    }
+    .imageDivNew {
+        width: 100%;
     }
 }
 
@@ -254,14 +264,6 @@ body {
             padding-top: 5px;
             padding-bottom: 5px;
         }
-        .imageDivNew {
-            border: none;
-            border-radius: unset;
-            -webkit-border-radius: unset;
-            -moz-border-radius: unset;
-            -ms-border-radius: unset;
-            -o-border-radius: unset;
-}
         img {
             width: 100%;
             height: 100%;
@@ -351,15 +353,16 @@ body {
 }
 
 .footer {
-    background-color: #222222;
+    background-color: $flatWhite;
+    margin-top: 100px;
     .contact {
-        color: $flatWhiteDark;
+        color: $flatBlack;
         font-size: 1.3rem;
         font-weight: 500;
         line-height: 1.75rem;
     }
     .fotPhone {
-        color: $flatWhiteDark;
+        color: $flatBlack;
         &:hover {
             color: $flatGreen;
             font-size: 1.8rem;
@@ -367,27 +370,32 @@ body {
         }
     }
     .conEmail {
-        color: $flatWhiteDark;
+        color: $flatBlack;
         &:hover {
             color: $flatGreen;
             font-size: 1.8rem;
             font-weight: bolder;
         }
     }
-    .main-btn {
-        background-color: $flatWhiteDark;
-        color: $flatGreenLite;
-        padding: 0.5rem 1rem;
-        font-weight: lighter;
-        text-align: center;
-        cursor: auto;
-    }
-    .logo {
-        color: $flatGreenLite;
-        font-size: .75rem;
-        line-height: 1.5rem;
-        font-weight: lighter;
-        padding-bottom: 2px;
-    }
 }
 
+.copyright {
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    // background-color: $flatWhiteDark;
+    color: $flatBlack;
+    padding: 0.5rem 1rem;
+    font-weight: lighter;
+    text-align: center;
+    cursor: auto;
+}
+.logo {
+    color: $flatBlack;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    padding-bottom: 2px;
+}

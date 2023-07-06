@@ -7,7 +7,6 @@ body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  background-color: rgba(189, 197, 199, 0.7215686275);
 }
 
 .clearfix {
@@ -43,7 +42,7 @@ body {
 }
 .nav-bar .links {
   margin-left: 62%;
-  margin-top: 20px;
+  margin-top: -45px;
   padding: 10px;
 }
 .nav-bar .links li {
@@ -170,9 +169,19 @@ body {
   height: 93%;
   line-height: 1.5rem;
 }
+.ourservices .newColSer {
+  background-color: #d0d0df;
+}
 .ourservices .lastSerHei {
   padding-top: 70px;
   padding-bottom: 215px;
+}
+.ourservices .newSerTable {
+  color: #044750;
+  font-weight: bold;
+}
+.ourservices .imageDivNew {
+  width: 100%;
 }
 
 .collNumb6 .newSerCon {
@@ -239,14 +248,6 @@ body {
 .gallery .images-box .imageDiv {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-.gallery .images-box .imageDivNew {
-  border: none;
-  border-radius: unset;
-  -webkit-border-radius: unset;
-  -moz-border-radius: unset;
-  -ms-border-radius: unset;
-  -o-border-radius: unset;
 }
 .gallery .images-box img {
   width: 100%;
@@ -335,16 +336,17 @@ body {
 }
 
 .footer {
-  background-color: #222222;
+  background-color: #fff;
+  margin-top: 100px;
 }
 .footer .contact {
-  color: #cfd5d6;
+  color: black;
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.75rem;
 }
 .footer .fotPhone {
-  color: #cfd5d6;
+  color: black;
 }
 .footer .fotPhone:hover {
   color: #58B19F;
@@ -352,23 +354,29 @@ body {
   font-weight: bolder;
 }
 .footer .conEmail {
-  color: #cfd5d6;
+  color: black;
 }
 .footer .conEmail:hover {
   color: #58B19F;
   font-size: 1.8rem;
   font-weight: bolder;
 }
-.footer .main-btn {
-  background-color: #cfd5d6;
-  color: #0c4750;
+
+.copyright {
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  color: black;
   padding: 0.5rem 1rem;
   font-weight: lighter;
   text-align: center;
   cursor: auto;
 }
-.footer .logo {
-  color: #0c4750;
+
+.logo {
+  color: black;
   font-size: 0.75rem;
   line-height: 1.5rem;
   font-weight: lighter;
@@ -465,12 +473,26 @@ body {
 @media (max-width: 767px) {
   .nav-bar .toggle-menu {
     display: inline-block;
-    margin-top: 85px;
+    margin-top: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-bar .toggle-menu span {
+    background-color: #000000;
   }
 }
 
 @media (max-width: 991px) {
   .ourservices h2 {
     margin-left: 105px;
+  }
+}
+@media (max-width: 991px) {
+  .gallery h2 {
+    width: 120px;
+    height: 115px;
+    padding-top: 13px;
+    margin-left: 35%;
+    font-size: 1.25rem;
   }
 }

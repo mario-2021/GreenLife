@@ -97,7 +97,12 @@
         .toggle-menu {
             @media (max-width: $maxSmall) {
                 display: inline-block;
-                margin-top: 85px;
+                margin-top: 70px;
+            }
+            span {
+                @media (max-width: $maxSmall) {
+                    background-color: #000000;
+                }
             }
         }
 }
@@ -105,6 +110,23 @@
     h2 {
         @media (max-width: $maxMedium) {
             margin-left: 105px;
+        }
+    }
+    .container {
+        @media (max-width: $maxMedium) {
+            
+        }
+    }
+}
+
+.gallery {
+    h2 {
+        @media (max-width: $maxMedium) {
+            width: 120px;
+            height: 115px;
+            padding-top: 13px;
+            margin-left: 35%;
+            font-size: 1.25rem;
         }
     }
 }

@@ -106,9 +106,9 @@ body {
         background-color: rgb(255 255 255 / 60%);
     }
     h2 {
-        color: #0c4750;
-        background-color: #c6c3c2;
-        border: 2px solid #2ebb9e;
+        color: $flatGreenLite;
+        background-color: $flatWhiteRed;
+        border: 2px solid $flatWhiteGreen;
         border-radius: 50%;
         width: 130px;
         height: 110px;
@@ -118,7 +118,7 @@ body {
     .serviceCont {
         border: 2px solid $darkGreenAlt;
         padding: 25px 20px;
-        box-shadow: -10px 10px 12px -5px #036268;
+        box-shadow: -10px 10px 12px -5px $darkGreenAlt;
         border-radius: 5%;
         margin-left: 3%;
         margin-top: 60px;
@@ -128,7 +128,7 @@ body {
             color: #1abc9c;
         }
         .fotoOne {
-            border: 1px solid black;
+            border: 1px solid $flatBlack;
             border-radius: 5%;
             -webkit-border-radius: 5%;
             -moz-border-radius: 5%;
@@ -154,7 +154,7 @@ body {
         }
         .fotoOneNew {
             margin-top: 85px;
-            border: 1px solid black;
+            border: 1px solid $flatBlack;
             border-radius: 5%;
             -webkit-border-radius: 5%;
             -moz-border-radius: 5%;
@@ -236,9 +236,9 @@ body {
     padding-bottom: 20px;
     text-align: center;
     h2 {
-        color: #0c4750;
-        background-color: #c6c3c2;
-        border: 2px solid #2ebb9e;
+        color: $flatGreenLite;
+        background-color: $flatWhiteRed;
+        border: 2px solid $flatWhiteGreen;
         border-radius: 50%;
         width: 195px;
         height: 165px;
@@ -255,13 +255,12 @@ body {
             width: 100%;
             height: 100%;
             padding: 3px;
-            background-color: #F6F6F6;
-            border: 1px solid #CCC;
+            background-color: $flatWhite;
             margin: 5px;
             cursor: pointer;
-            border: 1px solid white;
+            border: 1px solid $flatWhite;
             border-radius: 10%;
-            box-shadow: inset 0px 0px 14px 18px #c6c3c2;
+            box-shadow: inset 0px 0px 14px 18px $flatWhiteRed;
         }
         .videoDev {
             border: 2px solid #020202;
@@ -273,7 +272,7 @@ body {
 
 .popup-overlay {
     position: fixed;
-    background-color: hsla(0, 0%, 0%, 0.425);
+    background-color: rgba(0, 0, 0, 0.425);
     left: 0;
     top: 0;
     width: 100%;
@@ -286,7 +285,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFF;
+    background-color: $flatWhite;
     border: 1px solid #CCC;
     padding: 20px;
     z-index: 1001;
@@ -311,7 +310,7 @@ body {
     line-height: 40px;
     text-align: center;
     font-size: 20px;
-    color: #FFF;
+    color: $flatWhite;
     border-radius: 50%;
     font-weight: bold;
     cursor: pointer;
@@ -322,13 +321,13 @@ body {
 .footer {
     background-color: #222222;
     .contact {
-        color: #cfd5d6;
+        color: $flatWhiteDark;
         font-size: 1.3rem;
         font-weight: 500;
         line-height: 1.75rem;
     }
     .fotPhone {
-        color: #cfd5d6;
+        color: $flatWhiteDark;
         &:hover {
             color: $flatGreen;
             font-size: 1.8rem;
@@ -336,7 +335,7 @@ body {
         }
     }
     .conEmail {
-        color: #cfd5d6;
+        color: $flatWhiteDark;
         &:hover {
             color: $flatGreen;
             font-size: 1.8rem;
@@ -344,15 +343,15 @@ body {
         }
     }
     .main-btn {
-        background-color: #cfd5d6;
-        color: #0c4750;
+        background-color: $flatWhiteDark;
+        color: $flatGreenLite;
         padding: 0.5rem 1rem;
         font-weight: lighter;
         text-align: center;
         cursor: auto;
     }
     .logo {
-        color: #0c4750;
+        color: $flatGreenLite;
         font-size: .75rem;
         line-height: 1.5rem;
         font-weight: lighter;

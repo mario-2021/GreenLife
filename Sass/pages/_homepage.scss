@@ -88,6 +88,9 @@ body {
         height: 4px;
         margin-bottom: 4px;
     }
+    .toggle-span {
+        background-color: $flatWhite !important;
+    }
 }
 
 .background-image2 {
@@ -106,7 +109,7 @@ body {
     padding: 50px 20px;
     .container {
         background-color: rgb(255 255 255 / 60%);
-        margin-top: 150px;
+        margin-top: 11px;
     }
     h2 {
         color: $flatGreenLite;
@@ -144,7 +147,7 @@ body {
         }
         .info {
             h3 {
-                color: $darkGreen;
+                color: #d0362f;
                 margin-top: 10px;
             }
             p {

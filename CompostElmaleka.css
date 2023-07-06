@@ -361,6 +361,18 @@ body {
   font-size: 1.8rem;
   font-weight: bolder;
 }
+.footer .footerIcon {
+  font-size: 2rem;
+  text-align: end;
+}
+.footer .footerIcon a {
+  text-decoration: none;
+  color: blue;
+  margin: 10px;
+}
+.footer .footerIcon a:hover {
+  color: #044750;
+}
 
 .copyright {
   margin-top: 200px;

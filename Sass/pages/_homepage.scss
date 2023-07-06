@@ -41,11 +41,12 @@ body {
 .nav-bar {
     color: $flatWhite;
     .navbar-brand {
-        a {
-            color: $flatWhite;
-        }
+        margin-left: 90%;
     }
     .links {
+        margin-left: 62%;
+        margin-top: 20px;
+        padding: 10px;
         li {
             display: inline-block;
             border-bottom: 3px solid transparent;
@@ -61,30 +62,31 @@ body {
             color: $darkGreen;
         }
     }
-        .toggle-menu {
-        background: none;
-        border: none;
-        width: 40px;
-        cursor: pointer;
-        margin-top: 15px;
-        display: none;
-        position: relative;
-        margin-right: 25px;
-        &.menu-active::before{
-            content: '';
-            border-width: 10px;
-            border-style: solid;
-            border-color: transparent transparent $flatWhite transparent ;
-            position: absolute;
-            bottom: -10px;
-            left: 10px;
-        }
-        span {
-            display: block;
-            background-color: $darkGreen;
-            height: 4px;
-            margin-bottom: 4px;
-        }
+}
+
+.toggle-menu {
+    background: none;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: none;
+    position: relative;
+    margin-left: 310px;
+    &.menu-active::before{
+        content: '';
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent $flatWhiteDark transparent ;
+        position: absolute;
+        bottom: -10px;
+        left: 10px;
+    }
+    span {
+        display: block;
+        background-color: $flatWhiteDark;
+        height: 4px;
+        margin-bottom: 4px;
     }
 }
 
@@ -104,6 +106,7 @@ body {
     padding: 50px 20px;
     .container {
         background-color: rgb(255 255 255 / 60%);
+        margin-top: 150px;
     }
     h2 {
         color: $flatGreenLite;
@@ -324,6 +327,27 @@ body {
     cursor: pointer;
     font-family: Arial, Tahoma;
     user-select: none;
+}
+
+.help {
+    .helpFoto {
+        img {
+            height: 500px;
+        }
+    }
+    .helpInfo {
+        h3 {
+            color: #044750;
+            margin-top: 10px;
+        }
+        p {
+            color: #036268;
+            line-height: 3rem;
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 1.25rem;
+        }
+    }
 }
 
 .footer {

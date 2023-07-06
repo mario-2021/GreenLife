@@ -1,22 +1,52 @@
-// let toggleBtn = document.querySelector(".toggle-menu");
-// let tLinks = document.querySelector(".links");
+$(function (){
 
-// toggleBtn.onclick = function (e) {
+    $('.links li a').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+    });
 
-//     // Stop Propagation
-//     e.stopPropagation();
+});
 
-//     // Toggle Class menu-active on Button
-//     this.classList.toggle("menu-active");
+// Toggel Menu
+let toggleBtn = document.querySelector(".toggle-menu");
+let tLinks = document.querySelector(".links");
 
-//     // Toggle Class Open on Links
-//     tLinks.classList.toggle("open");
-// };
+toggleBtn.onclick = function (e) {
 
-// // Stop Propagation
-// tLinks.onclick = function (e) {
-//     e.stopPropagation();
-// }
+    // Stop Propagation
+    e.stopPropagation();
+
+    // Toggle Class menu-active on Button
+    this.classList.toggle("menu-active");
+
+    // Toggle Class Open on Links
+    tLinks.classList.toggle("open");
+};
+
+// Click anywhere Outside Menu and Toggle Button
+document.addEventListener("click", (e) => {
+
+    // console.log(e.target);
+
+    if (e.target !== toggleBtn && e.target !== tLinks) {
+        // console.log("good");
+
+        // Check If Menu is Open
+        if (tLinks.classList.contains("open")) {
+            // console.log("good");
+
+            // Toggle Class menu-active on Button
+            toggleBtn.classList.toggle("menu-active");
+
+            // Toggle Class Open on Links
+            tLinks.classList.toggle("open");
+        }
+    }
+});
+
+// Stop Propagation
+tLinks.onclick = function (e) {
+    e.stopPropagation();
+}
 
 
 //Smooth Scroll

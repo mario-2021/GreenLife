@@ -50,13 +50,56 @@
 .nav-bar {
     .navbar-brand{
         @media (max-width: $maxMedium) {
-            margin-left: 105px;
+            margin-left: 32%;
         }
     }
     .links {
-        margin-left: 50px;
-        margin-top: 20px;
-    }
+        @media (max-width: $maxSmall) {
+            display: none;
+        }
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            margin-right: -95px;
+        }
+        &.open {
+            @media (max-width: $maxSmall) {
+                    background-color: $flatWhiteDark;
+                    color: $darkGreen;
+                    padding: 10px;
+                    display: block;
+                    position: absolute;
+                    right: 10px;
+                    top: 247px;
+                    width: 60%;
+                    border-radius: 20px;
+                    text-align: center;
+                    z-index: 100000000;
+                    li {
+                        @media (max-width: $maxSmall) {
+                            display: block;
+                            margin: 10px;
+                            transition-duration: .3s;
+                            border: none;
+                            &:hover {
+                                font-size: 2rem;
+                                border: none;
+                            }
+                        }
+                        a {
+                            @media (max-width: $maxSmall) {
+                                color: $darkGreen;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+        .toggle-menu {
+            @media (max-width: $maxSmall) {
+                display: inline-block;
+                margin-top: 85px;
+            }
+        }
 }
 .ourservices {
     h2 {

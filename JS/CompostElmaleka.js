@@ -57,86 +57,190 @@ $('.links li a').click(function () {
 });
 
 
-//  Gallery
 
-let ourGallery = document.querySelectorAll(".gallery .images-box img");
 
-ourGallery.forEach(img => {
 
-    img.addEventListener('click', (e) => {
 
-        // Create Overlay Element
-        let Overlay = document.createElement("div");
 
-        // Add class to overlay
-        Overlay.className = 'popup-overlay';
 
-        // Append overlay to Body
-        document.body.appendChild(Overlay);
 
-        // Create Popup
-        let popupBox = document.createElement("div");
 
-        // Add Class to PopupBox
-        popupBox.className = 'popup-box';
 
-        if (img.alt !== null) {
 
-            // Create Heading
-            let imgHeading = document.createElement("h3");
 
-            // Create Text for Heading
-            let imgText = document.createTextNode(img.alt);
+// Get Slider Items  |  Array.from [ES6 Feature]
+var sliderImages = Array.from(document.querySelectorAll('.slider-container img'));
 
-            // Append Text to Heading
-            imgHeading.appendChild(imgText);
+// console.table(sliderImages);
 
-            // Append Heading to PopupBox
-            popupBox.appendChild(imgHeading);
+// Get Number Of Slides
+var slidesCount = sliderImages.length;
 
-        }
+// console.log(slidesCount);
 
-        // Create Image
-        let popupImage = document.createElement("img");
+// Set Current Slide
+var currentSlide = 1;
 
-        // console.log(img.src);
+// Slide Number String Element
+var slideNumberElement = document.getElementById('slide-number');
 
-        // Set Image Source
-        popupImage.src = img.src;
+// Previous and Next Buttons
+var nextButton = document.getElementById('next');
+var prevButton = document.getElementById('prev');
 
-        // Add Image to Popup Box
-        popupBox.appendChild(popupImage);
+// Handle Click on Previous and Next Button
+nextButton.onclick = nextSlide;
+prevButton.onclick = prevSlide;
 
-        // Append Popup Box to Body
-        document.body.appendChild(popupBox);
+// Create Main UL Element
+var paginationElement = document.createElement('ul');
 
-        // Create Close Span
-        let closeButton = document.createElement("span");
+// Set ID on Created UL Element
+paginationElement.setAttribute('id', 'pagination-ul');
 
-        // Create Close Button Text
-        let closeButtonText = document.createTextNode("X");
+// Create List Items Based on Slides Count 
+for (var i = 1; i <= slidesCount; i++) {
 
-        // Append Text to Close Button
-        closeButton.appendChild(closeButtonText);
+    // Creat LI
+    var paginationItem = document.createElement('li');
 
-        // Add Class to CloseButton
-        closeButton.className = 'close-button';
+    // Set Custom Attribute
+    paginationItem.setAttribute('data-index', i);
 
-        // Add CloseButton to PopupBox
-        popupBox.appendChild(closeButton);
+    // Set Item Content
+    paginationItem.appendChild(document.createTextNode(i));
 
-    });
-});
+    // Append Items to the Main UL list 
+    paginationElement.appendChild(paginationItem);
+}
 
-// Close Popup
-document.addEventListener("click", function (e) {
+// Add the Created UL Element to the Page
+document.getElementById('indicators').appendChild(paginationElement);
 
-    if (e.target.className === 'close-button') {
+// Get the New Created UL 
+var paginationCreatedUl = document.getElementById('pagination-ul');
 
-        // Remove Current Popup
-        e.target.parentNode.remove();
+// Get Pagination Items  |  Array.from [ES6 Feature]
+var paginationsBullets = Array.from(document.querySelectorAll('#pagination-ul li'));
 
-        // Remove Overlay
-        document.querySelector(".popup-overlay").remove();
+// Loop Through All Bullets Items
+for (var i = 0; i < paginationsBullets.length; i++) {
+
+    paginationsBullets[i].onclick = function () {
+
+        currentSlide = parseInt(this.getAttribute('data-index'));
+
+        theChecker();
+
     }
-});
+}
+
+// Trigger the Checker Function
+theChecker();
+
+
+
+// Next Slide Function
+function nextSlide() {
+
+    // console.log('Next');
+
+    if (nextButton.classList.contains('disabled')) {
+
+        // Do Nothing
+        return false
+
+    } else {
+        currentSlide++;
+
+        theChecker();
+    }
+
+}
+
+// Previous Slide Function
+function prevSlide() {
+
+    // console.log('Previous');
+
+    if (prevButton.classList.contains('disabled')) {
+
+        // Do Nothing
+        return false
+
+    } else {
+        currentSlide--;
+
+        theChecker();
+    }
+}
+
+// Create the Checker Function
+function theChecker() {
+
+    // Set the Slide Number
+    slideNumberElement.textContent = 'Slide #' + (currentSlide) + ' of ' + (slidesCount);
+
+    // Remove All Active Classes
+    removeAllActive();
+
+    // Set Active Class on Current Slide
+    sliderImages[currentSlide - 1].classList.add('active');
+
+    // Set Active Class on Current Pagination Item
+    paginationCreatedUl.children[currentSlide - 1].classList.add('active');
+
+    // Check If Current Slide is First
+    if (currentSlide == 1) {
+
+        // Add Disabled Class on Previous Button
+        prevButton.classList.add('disabled');
+
+    } else {
+
+        // Remove Disabled Class from Previous Button
+        prevButton.classList.remove('disabled');
+    }
+
+    // Check If Current Slide is Last
+    if (currentSlide == slidesCount) {
+
+        // Add Disabled Class on next Button
+        nextButton.classList.add('disabled');
+
+    } else {
+
+        // Remove Disabled Class from next Button
+        nextButton.classList.remove('disabled');
+    }
+
+
+}
+
+// Remove All Active Classes from Images and Pagination Bullets
+function removeAllActive() {
+
+    // Loop Through Images
+    sliderImages.forEach(function (img) {
+
+        img.classList.remove('active');
+    });
+
+    // Loop Through Pagination Bullets
+    paginationsBullets.forEach(function (Bullet) {
+
+        Bullet.classList.remove('active');
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+

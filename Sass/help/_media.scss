@@ -50,7 +50,14 @@
 .nav-bar {
     .navbar-brand{
         @media (max-width: $maxMedium) {
-            margin-left: 32%;
+            margin-left: 55%;
+        }
+        img {
+            @media (max-width: $maxMedium) {
+                width: 50%;
+                margin-left: 75px;
+                height: 50%;
+            }
         }
     }
     .links {
@@ -67,8 +74,8 @@
                     padding: 10px;
                     display: block;
                     position: absolute;
-                    right: 10px;
-                    top: 282px;
+                    right: 135px;
+                    top: 145px;
                     width: 60%;
                     border-radius: 20px;
                     text-align: center;
@@ -97,16 +104,28 @@
         .toggle-menu {
             @media (max-width: $maxSmall) {
                 display: inline-block;
-                margin-top: 70px;
+                border: 1px solid black;
+                border-radius: 7px;
+                width: 50px;
+                height: 40px;
+                padding-top: 7px;
             }
             span {
                 @media (max-width: $maxSmall) {
-                    background-color: #000000;
+                    
                 }
             }
         }
 }
+
+.nav-image {
+    margin-top: -30px;
+}
+
 .ourservices {
+    @media (max-width: $maxMedium) {
+        margin-top: -55px;
+    }
     h2 {
         @media (max-width: $maxMedium) {
             margin-left: 105px;

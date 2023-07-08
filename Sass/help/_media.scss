@@ -160,6 +160,9 @@
     }
     .images-box {
         .slider-container {
+            @media (max-width: $maxMedium) {
+                margin: 10px 35px;
+            }
             .slider-image {
                 @media (max-width: $maxMedium) {
                     width: 300px;
@@ -168,9 +171,19 @@
                 }
             }
         }
+        .slider-controls {
+            @media screen {
+                overflow: visible;
+            }
+        }
         .prev {
             @media (max-width: $maxMedium) {
-                margin-left: 10px;
+                margin-left: 40px;
+            }
+        }
+        .next {
+            @media (max-width: $maxMedium) {
+                margin-right: -20px;
             }
         }
     }

@@ -82,7 +82,7 @@ var slidesCount = sliderImages.length;
 var currentSlide = 1;
 
 // Slide Number String Element
-var slideNumberElement = document.getElementById('slide-number');
+var slideNumberVideoElement = document.getElementById('slide-number');
 
 // Previous and Next Buttons
 var nextButton = document.getElementById('next');
@@ -179,7 +179,7 @@ function prevSlide() {
 function theChecker() {
 
     // Set the Slide Number
-    slideNumberElement.textContent = 'Slide #' + (currentSlide) + ' of ' + (slidesCount);
+    slideNumberVideoElement.textContent = 'Slide #' + (currentSlide) + ' of ' + (slidesCount);
 
     // Remove All Active Classes
     removeAllActive();
@@ -241,6 +241,167 @@ function removeAllActive() {
 
 
 
+// Get Slider Items  |  Array.from [ES6 Feature]
+var sliderVideo = Array.from(document.querySelectorAll('.slider-video .slider-container .slider-video'));
+
+// console.table(sliderImages);
+
+// Get Number Of Slides
+var slidesVideoCount = sliderVideo.length;
+
+// console.log(slidesCount);
+
+// Set Current Slide
+var currentSlideVideo = 1;
+
+// Slide Number String Element
+var slideNumberVideoElement = document.getElementById('slide-number-video');
+
+// Previous and Next Buttons
+var nextVideoButton = document.getElementById('nextVideo');
+var prevVideoButton = document.getElementById('prevVideo');
+
+// Handle Click on Previous and Next Button
+nextVideoButton.onclick = nextVideoSlide;
+prevVideoButton.onclick = prevVideoSlide;
+
+// Create Main UL Element
+var paginationVideoElement = document.createElement('ul');
+
+// Set ID on Created UL Element
+paginationVideoElement.setAttribute('id', 'paginationVideo-ul');
+
+// Create List Items Based on Slides Count 
+for (var i = 1; i <= slidesVideoCount; i++) {
+
+    // Creat LI
+    var paginationVideoItem = document.createElement('li');
+
+    // Set Custom Attribute
+    paginationVideoItem.setAttribute('data-index-video', i);
+
+    // Set Item Content
+    paginationVideoItem.appendChild(document.createTextNode(i));
+
+    // Append Items to the Main UL list 
+    paginationVideoElement.appendChild(paginationVideoItem);
+}
+
+// Add the Created UL Element to the Page
+document.getElementById('indicatorsVideo').appendChild(paginationVideoElement);
+
+// Get the New Created UL 
+var paginationVideoCreatedUl = document.getElementById('paginationVideo-ul');
+
+// Get Pagination Items  |  Array.from [ES6 Feature]
+var paginationsVideoBullets = Array.from(document.querySelectorAll('#paginationVideo-ul li'));
+
+// Loop Through All Bullets Items
+for (var i = 0; i < paginationsVideoBullets.length; i++) {
+
+    paginationsVideoBullets[i].onclick = function () {
+
+        currentSlideVideo = parseInt(this.getAttribute('data-index-video'));
+
+        theCheckerVideo();
+
+    }
+}
+
+// Trigger the Checker Function
+theCheckerVideo();
 
 
 
+// Next Slide Function
+function nextVideoSlide() {
+
+    // console.log('Next');
+
+    if (nextVideoButton.classList.contains('disabledVideo')) {
+
+        // Do Nothing
+        return false
+
+    } else {
+        currentSlideVideo++;
+
+        theCheckerVideo();
+    }
+
+}
+
+// Previous Slide Function
+function prevVideoSlide() {
+
+    // console.log('Previous');
+
+    if (prevVideoButton.classList.contains('disabledVideo')) {
+
+        // Do Nothing
+        return false
+
+    } else {
+        currentSlideVideo--;
+
+        theCheckerVideo();
+    }
+}
+
+// Create the Checker Function
+function theCheckerVideo() {
+
+    // Set the Slide Number
+    slideNumberVideoElement.textContent = 'Slide #' + (currentSlideVideo) + ' of ' + (slidesVideoCount);
+
+    // Remove All Active Classes
+    removeAllVideoActive();
+
+    // Set Active Class on Current Slide
+    sliderVideo[currentSlideVideo - 1].classList.add('activeVideo');
+
+    // Set Active Class on Current Pagination Item
+    paginationVideoCreatedUl.children[currentSlideVideo - 1].classList.add('activeVideo');
+
+    // Check If Current Slide is First
+    if (currentSlideVideo == 1) {
+
+        // Add Disabled Class on Previous Button
+        prevVideoButton.classList.add('disabledVideo');
+
+    } else {
+
+        // Remove Disabled Class from Previous Button
+        prevVideoButton.classList.remove('disabledVideo');
+    }
+
+    // Check If Current Slide is Last
+    if (currentSlideVideo == slidesVideoCount) {
+
+        // Add Disabled Class on next Button
+        nextVideoButton.classList.add('disabledVideo');
+
+    } else {
+
+        // Remove Disabled Class from next Button
+        nextVideoButton.classList.remove('disabledVideo');
+    }
+
+
+}
+
+// Remove All Active Classes from Images and Pagination Bullets
+function removeAllVideoActive() {
+
+    // Loop Through Images
+    sliderVideo.forEach(function (video) {
+
+        video.classList.remove('activeVideo');
+    });
+
+    // Loop Through Pagination Bullets
+    paginationsVideoBullets.forEach(function (Bullet) {
+
+        Bullet.classList.remove('activeVideo');
+    });
+}

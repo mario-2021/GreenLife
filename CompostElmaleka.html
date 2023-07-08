@@ -210,7 +210,7 @@
 
                 <div class="col-12 mt-5 mb-5">
                     <div>
-                        <h3 class="text-end mt-3 mb-3 newSerTable">
+                        <h3 class="text-center mt-3 mb-3 newSerTable">
                             الخصائص الطبيعية والكميائية والبيولوجية
                         </h3>
                     </div>
@@ -247,7 +247,7 @@
         <div class="container">
             <div class="row">
                 <h2 class="col-12">
-                    معرض الصور والفديوهات
+                    معرض الصور 
                 </h2>
                 <div class="images-box row mt-3">
 
@@ -336,7 +336,7 @@
                     </div> -->
 
                     <div class="slider-container col-12">
-                        <div id="slide-number" class="slide-number"></div>
+                        <div id="slide-number" class="slide-number d-none"></div>
                         <img src="./foto/foto2/Image5.jpg" alt="" class="slider-image">
                         <img src="./foto/foto2/Image6.jpg" alt="" class="slider-image">
                         <img src="./foto/Im at 03.15.48.jpg" alt="" class="slider-image">
@@ -354,7 +354,7 @@
                         <span id="prev" class="prev">
                             <i class="fa-solid fa-chevron-left fa-2xl"></i>
                         </span>
-                        <span id="indicators" class="indicators"></span>
+                        <span id="indicators" class="indicators d-none"></span>
                         <span id="next" class="next">
                             <i class="fa-solid fa-chevron-right fa-2xl"></i>
                         </span>
@@ -367,122 +367,80 @@
 
     <div class="clearfix"></div>
 
-    <div class="container slider-video">
-        <div class="slider-container col-12">
-            <div id="slide-number-video" class="slide-number"></div>
-            <div class="slider-video">
-                <video controls width="300" height="600" class="">
-                    <source src="./foto/foto2/Video5.mp4" type="video/mp4" class="video-control">
-                </video>
-            </div>
-            <div class="slider-video">
-                <video controls width="300" height="600" class="">
-                    <source src="./foto/foto2/Video4.mp4" type="video/mp4" class="video-control">
-                </video>
-            </div>
-            <div class="slider-video">
-                <video controls width="300" height="600" class="">
-                    <source src="./foto/foto2/Video2.mp4" type="video/mp4" class="video-control">
-                </video>
-            </div>
-            <div class="slider-video">
-            <video controls width="300" height="600" class="">
-                <source src="./foto/foto2/Video3.mp4" type="video/mp4" class="video-control">
+    <div class="row">
+        <div class="slideshow-container">
+
+            <h2 class="text-center col-12">
+                معرض الفديوهات
+            </h2>
+    
+            <div class="mySlides fade col-12">
+              <div class="numberText text-center fw-bold">1 / 6</div>
+              <video controls width="" height="" class="">
+                <source src="./foto/foto2/Video1.mp4" type="video/mp4" class="video-control">
             </video>
-        </div>
-        <div class="slider-video">
-            <video controls width="300" height="600" class="">
-                <source src="./foto/foto2/Video6.mp4" type="video/mp4" class="video-control">
+            </div>
+          
+            <div class="mySlides fade col-12">
+              <div class="numberText text-center fw-bold">2 / 6</div>
+              <video controls width="" height="" class="">
+                <source src="./foto/foto2/Video5.mp4" type="video/mp4" class="video-control">
             </video>
-        </div>
-        </div>
-        <div class="slider-controls">
-            <span id="prevVideo" class="prev">
+            </div>
+          
+            <div class="mySlides fade col-12">
+              <div class="numberText text-center fw-bold">3 / 6</div>
+              <video controls width="" height="" class="">
+                <source src="./foto/foto2/Video4.mp4" type="video/mp4" class="video-control">
+            </video>
+            </div>
+    
+            <div class="mySlides fade col-12">
+                <div class="numberText text-center fw-bold">4 / 6</div>
+                <video controls width="" height="" class="">
+                  <source src="./foto/foto2/Video2.mp4" type="video/mp4" class="video-control">
+              </video>
+              </div>
+            
+              <div class="mySlides fade col-12">
+                <div class="numberText text-center fw-bold">5 / 6</div>
+                <video controls width="" height="" class="">
+                  <source src="./foto/foto2/Video3.mp4" type="video/mp4" class="video-control">
+              </video>
+              </div>
+            
+              <div class="mySlides fade col-12">
+                <div class="numberText text-center fw-bold">6 / 6</div>
+                <video controls width="" height="" class="">
+                  <source src="./foto/foto2/Video6.mp4" type="video/mp4" class="video-control">
+              </video>
+              </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">
+                <!-- &#10094; -->
                 <i class="fa-solid fa-chevron-left fa-2xl"></i>
-            </span>
-            <span id="indicatorsVideo" class="indicators"></span>
-            <span id="nextVideo" class="next">
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                <!-- &#10095; -->
                 <i class="fa-solid fa-chevron-right fa-2xl"></i>
-            </span>
-        </div>
+            </a>
+          </div>
     </div>
+      
+      <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div> -->
 
-    <!-- <div class="help mt-5" id="ser">
-        <div class="container">
-            <div class="row"> -->
-                <!-- <div class="col-6 helpFoto">
-                    <img src="./foto/foto2/Image2.jpg" alt="" class="img-fluid">
-                </div> -->
-
-                <!-- <div class="col-12 helpInfo text-end">
-                    <h3 class="fw-bold">
-                        تصنيع للغير
-                    </h3>
-                    <p class="text-end">
-                        نجحنا فى الكثير من التصنيع للغير فى حالة الكميات للمزارع الكبيرة فقط بالقيام بعمليه تدوير المخلفات النباتيه الموجودة بالمزرعه زى النباتات الطبيه والعطرية مع الاضافات البسيطه له وانتاج كمبوست خاص جيد مطابق للمواصفات العالمية كامل النضج  غنى بالمادة العضوية وجميع العناصر الغذائية وبدون تماما بذور الحشائش والنيماتودا ومسببات الامراض مما يساعد على توفير اكثر من ٥٠٪؜ من التكلفه وزيادة الانتاج ويكون زراعه عضويه او نظيفه
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="footer pt-5 pb-5 text-md-start mt-4" id="con">
-        <div class="container">
-            <div class="row">
-                
-                    <div class="col-12 mt-3 mb-4 text-end contact">
-                            الأدارة: ٢ش مصطفى البرادعى - خلف كنتاكى النزهة الجديدة شقة(١) - مصر الجديدة - القاهرة 
-                    </div>
-
-                <div class="col-6 text-end mb-4 contact">
-                    <a href="tel:01227808741" class="text-decoration-none fotPhone">
-                        موبايل : ٠١٢٢٧٨٠٨٧٤١
-                    </a>
-                </div>
-
-                <div class="col-6 text-center mb-4 contact">
-                    <a href="tel:0226221019" class="text-decoration-none fotPhone">
-                        تليفون | فاكس : ٠٢٢٦٢٢١٠١٩  
-                    </a>
-                </div>
-
-                <div class="col-12 text-center mb-4 contact ">
-                    <a href="mailto:compost.elmalaka@hotmail.com?subject=Contact" 
-                    class="text-decoration-none conEmail">
-                        E-mail: compost.elmalaka@hotmail.com
-                    </a>
-                </div>
-    
-                <div class="col-12 text-end mb-4 contact">
-                    المصنع: الدائرى - ميت حلفا - بجانب طريق مصر الأسكندرية الزراعى - القاهرة
-                </div>
-    
-                <div class="col-12 text-center mb-4 contact">
-                    <a href="tel:01284594342" class="text-decoration-none fotPhone">
-                        موبايل: ٠١٢٨٤٥٩٤٣٤٢
-                    </a>
-                </div>
-
-                    <div class="copyright main-btn btn rounded-pill w-100 col-6">
-                        &copy; Copyright MeroSH 2023 
-                        Created By <span>MeroSH</span>
-
-                        <a href="mailto:mariocpu2017@gmail.com?subject=Contact" 
-                        class="ms-5">
-                            <i class="fa-brands fa-google logo"></i>
-                        </a>
-
-                </div>
-                
-            </div>
-
-        </div>
-    </div> -->
 
     <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/all.min.js"></script>
     <script src="./JS/jquery.min.js"></script>
+    <script src="./JS/jquery.bxslider.js"></script>
     <script src="./JS/CompostElmaleka.js"></script>
 </body>
 </html>

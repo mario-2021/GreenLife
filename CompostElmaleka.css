@@ -687,7 +687,7 @@ body {
 }
 @media (max-width: 991px) {
   .gallery .images-box .next {
-    margin-right: -20px;
+    margin-right: -40px;
   }
 }
 

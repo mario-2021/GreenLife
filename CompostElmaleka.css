@@ -600,6 +600,7 @@ body {
     height: 50px !important;
     padding-top: 15px !important;
     font-size: 0.75rem !important;
+    margin-left: 0 !important;
   }
 }
 @media (max-width: 991px) {
@@ -627,6 +628,7 @@ body {
     height: 50px !important;
     padding-top: 15px !important;
     font-size: 0.75rem !important;
+    margin-left: 35px !important;
   }
 }
 @media (max-width: 991px) {
@@ -677,6 +679,7 @@ body {
     height: 50px !important;
     padding-top: 15px !important;
     font-size: 0.75rem !important;
+    margin-left: 30px !important;
   }
 }
 @media (max-width: 991px) {
@@ -714,9 +717,8 @@ body {
 .ourservices .serviceCont .fotoOneEN3 {
   height: 1115px;
 }
-
 .ourservices .newSerTableEN {
-  margin-right: 0;
+  margin-left: 80px;
   color: #d0362f;
   background-color: #c6c3c2;
   border: 2px solid #2ebb9e;
@@ -733,7 +735,7 @@ body {
 .galleryEN h2 {
   border-bottom-right-radius: 70px !important;
   border-top-right-radius: 70px !important;
-  margin-left: 0 !important;
+  margin-left: 80px !important;
   border-bottom-left-radius: 0 !important;
   border-top-left-radius: 0 !important;
   font-weight: bold;
@@ -742,7 +744,7 @@ body {
 }
 
 .slideshow-container .EN {
-  margin-left: 0 !important;
+  margin-left: 0;
   border-bottom-left-radius: 0 !important;
   border-top-left-radius: 0 !important;
   margin-right: 70%;

@@ -551,13 +551,6 @@ body {
   z-index: -1;
 }
 
-@media (max-width: 767px) {
-  .navbar-brand {
-    margin-left: 0%;
-    margin-top: -15px;
-  }
-}
-
 .about .about-head {
   color: #044750;
 }
@@ -568,68 +561,25 @@ body {
   line-height: 3.5rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .nav-bar .navbar-brand {
-    margin-left: 55%;
-  }
-}
-@media (max-width: 991px) {
-  .nav-bar .navbar-brand img {
-    width: 50%;
-    margin-left: 75px;
-    height: 50%;
+    margin-left: 35%;
+    margin-top: -15px;
   }
 }
 @media (max-width: 767px) {
   .nav-bar .links {
-    display: none;
-  }
-}
-@media (min-width: 767px) and (max-width: 991px) {
-  .nav-bar .links {
-    margin-right: -95px;
-  }
-}
-@media (max-width: 767px) {
-  .nav-bar .links.open {
-    background-color: #cfd5d6;
-    color: #044750;
-    padding: 10px;
-    display: block;
-    position: absolute;
-    right: 135px;
-    top: 145px;
-    width: 60%;
-    border-radius: 20px;
-    text-align: center;
-    z-index: 100000000;
+    margin-top: 5px;
+    margin-left: 45px;
+    padding: 0;
   }
 }
 @media (max-width: 767px) and (max-width: 767px) {
-  .nav-bar .links.open li {
-    display: block;
-    margin: 10px;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-    border: none;
+  .nav-bar .links li a {
+    color: black;
   }
 }
-@media (max-width: 767px) and (max-width: 767px) {
-  .nav-bar .links.open li a {
-    color: #044750;
-    font-weight: bold;
-  }
-}
-@media (max-width: 767px) {
-  .nav-bar .toggle-menu {
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 7px;
-    width: 50px;
-    height: 40px;
-    padding-top: 7px;
-  }
-}
+
 .nav-image {
   margin-top: -30px;
 }
@@ -642,6 +592,14 @@ body {
 @media (max-width: 991px) {
   .ourservices h2 {
     margin-left: 105px;
+  }
+}
+@media (max-width: 991px) {
+  .ourservices .h3EN {
+    width: 275px !important;
+    height: 50px !important;
+    padding-top: 15px !important;
+    font-size: 0.75rem !important;
   }
 }
 @media (max-width: 991px) {
@@ -661,6 +619,14 @@ body {
     margin-left: 25%;
     width: 240px;
     height: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .gallery .EN {
+    width: 275px !important;
+    height: 50px !important;
+    padding-top: 15px !important;
+    font-size: 0.75rem !important;
   }
 }
 @media (max-width: 991px) {
@@ -706,6 +672,14 @@ body {
   }
 }
 @media (max-width: 991px) {
+  .slideshow-container .EN {
+    width: 275px !important;
+    height: 50px !important;
+    padding-top: 15px !important;
+    font-size: 0.75rem !important;
+  }
+}
+@media (max-width: 991px) {
   .slideshow-container .mySlides video {
     width: 300px;
     height: 300px;
@@ -721,4 +695,60 @@ body {
   .copyright {
     margin-top: 100px;
   }
+}
+
+.ourservices .lastSerHeiEN {
+  padding-bottom: 15px;
+}
+.ourservices .newHeiEN {
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+.ourservices .serviceCont .fotoOneEN {
+  height: 965px;
+}
+.ourservices .serviceCont .fotoOneEN2 {
+  height: 1210px;
+}
+.ourservices .serviceCont .fotoOneEN3 {
+  height: 1115px;
+}
+
+.ourservices .newSerTableEN {
+  margin-right: 0;
+  color: #d0362f;
+  background-color: #c6c3c2;
+  border: 2px solid #2ebb9e;
+  border-radius: 10px;
+  width: 735px;
+  height: 75px;
+  padding-top: 20px;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 70px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.galleryEN h2 {
+  border-bottom-right-radius: 70px !important;
+  border-top-right-radius: 70px !important;
+  margin-left: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 15px !important;
+}
+
+.slideshow-container .EN {
+  margin-left: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  margin-right: 70%;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 70px;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 15px !important;
 }

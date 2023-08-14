@@ -1,0 +1,71 @@
+@use '../help/variable' as *;
+
+@use '../pages/homepage' as *;
+
+@use '../pages/about' as *;
+
+
+
+.ourservices {
+    .lastSerHeiEN {
+        padding-bottom: 15px;
+    }
+    .newHeiEN {
+        height: max-content !important;
+    }
+    .serviceCont {
+        .fotoOneEN {
+            height: 965px;
+        }
+        .fotoOneEN2 {
+            height: 1210px;
+        }
+        .fotoOneEN3 {
+            height: 1115px;
+        }
+    }
+}
+
+.ourservices {
+    .newSerTableEN {
+        margin-right: 0;
+        color: #d0362f;
+        background-color: #c6c3c2;
+        border: 2px solid #2ebb9e;
+        border-radius: 10px;
+        width: 735px;
+        height: 75px;
+        padding-top: 20px;
+        border-bottom-right-radius: 70px;
+        border-top-right-radius: 70px;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+.galleryEN {
+    h2 {
+        border-bottom-right-radius: 70px !important;
+        border-top-right-radius: 70px !important;
+        margin-left: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-top: 15px !important;
+    }
+}
+
+.slideshow-container {
+    .EN {
+        margin-left: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        margin-right: 70%;
+        border-bottom-right-radius: 70px;
+        border-top-right-radius: 70px;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-top: 15px !important;
+    }
+}

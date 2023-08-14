@@ -47,75 +47,99 @@
 //     }
 // }
 
+// .nav-bar {
+//     .navbar-brand{
+//         @media (max-width: $maxMedium) {
+//             margin-left: 55%;
+//         }
+//         img {
+//             @media (max-width: $maxMedium) {
+//                 width: 50%;
+//                 margin-left: 75px;
+//                 height: 50%;
+//             }
+//         }
+//     }
+//     .links {
+//         @media (max-width: $maxSmall) {
+//             // display: none;
+//         }
+//         @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+//             margin-right: -95px;
+//         }
+//         &.open {
+//             @media (max-width: $maxSmall) {
+//                     background-color: $flatWhiteDark;
+//                     color: $darkGreen;
+//                     padding: 10px;
+//                     display: block;
+//                     position: absolute;
+//                     right: 135px;
+//                     top: 145px;
+//                     width: 60%;
+//                     border-radius: 20px;
+//                     text-align: center;
+//                     z-index: 100000000;
+//                     li {
+//                         @media (max-width: $maxSmall) {
+//                             display: block;
+//                             margin: 10px;
+//                             transition-duration: .3s;
+//                             border: none;
+//                             // &:hover {
+//                             //     font-size: 2rem;
+//                             //     border: none;
+//                             // }
+//                         }
+//                         a {
+//                             @media (max-width: $maxSmall) {
+//                                 color: $darkGreen;
+//                                 font-weight: bold;
+//                             }
+//                         }
+//                     }
+//                 } 
+//             }
+//         }
+//         .toggle-menu {
+//             @media (max-width: $maxSmall) {
+//                 display: inline-block;
+//                 border: 1px solid black;
+//                 border-radius: 7px;
+//                 width: 50px;
+//                 height: 40px;
+//                 padding-top: 7px;
+//             }
+//             span {
+//                 @media (max-width: $maxSmall) {
+                    
+//                 }
+//             }
+//         }
+// }
+
 .nav-bar {
-    .navbar-brand{
-        @media (max-width: $maxMedium) {
-            margin-left: 55%;
-        }
-        img {
-            @media (max-width: $maxMedium) {
-                width: 50%;
-                margin-left: 75px;
-                height: 50%;
-            }
+
+    .navbar-brand {
+        @media (max-width: $maxSmall) {
+            margin-left: 35%;
+            margin-top: -15px;
         }
     }
-    .links {
+    .links{
         @media (max-width: $maxSmall) {
-            display: none;
-        }
-        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
-            margin-right: -95px;
-        }
-        &.open {
-            @media (max-width: $maxSmall) {
-                    background-color: $flatWhiteDark;
-                    color: $darkGreen;
-                    padding: 10px;
-                    display: block;
-                    position: absolute;
-                    right: 135px;
-                    top: 145px;
-                    width: 60%;
-                    border-radius: 20px;
-                    text-align: center;
-                    z-index: 100000000;
-                    li {
-                        @media (max-width: $maxSmall) {
-                            display: block;
-                            margin: 10px;
-                            transition-duration: .3s;
-                            border: none;
-                            // &:hover {
-                            //     font-size: 2rem;
-                            //     border: none;
-                            // }
-                        }
-                        a {
-                            @media (max-width: $maxSmall) {
-                                color: $darkGreen;
-                                font-weight: bold;
-                            }
-                        }
+            margin-top: 5px;
+            margin-left: 45px;
+            padding: 0;
+            li {
+                a {
+                    @media (max-width: $maxSmall) {
+                        color: black;
                     }
-                } 
-            }
-        }
-        .toggle-menu {
-            @media (max-width: $maxSmall) {
-                display: inline-block;
-                border: 1px solid black;
-                border-radius: 7px;
-                width: 50px;
-                height: 40px;
-                padding-top: 7px;
-            }
-            span {
-                @media (max-width: $maxSmall) {
-                    
                 }
             }
         }
+    }
 }
 
 .nav-image {
@@ -129,6 +153,14 @@
     h2 {
         @media (max-width: $maxMedium) {
             margin-left: 105px;
+        }
+    }
+    .h3EN {
+        @media (max-width: $maxMedium) {
+            width: 275px !important;
+            height: 50px !important;
+            padding-top: 15px !important;
+            font-size: .75rem !important;
         }
     }
     .container {
@@ -156,6 +188,14 @@
             margin-left: 25%;
             width: 240px;
             height: 60px;
+        }
+    }
+    .EN {
+        @media (max-width: $maxMedium) {
+            width: 275px !important;
+            height: 50px !important;
+            padding-top: 15px !important;
+            font-size: .75rem !important;
         }
     }
     .images-box {
@@ -200,6 +240,14 @@
             margin-left: 25%;
             width: 240px;
             height: 60px;
+        }
+    }
+    .EN {
+        @media (max-width: $maxMedium) {
+            width: 275px !important;
+            height: 50px !important;
+            padding-top: 15px !important;
+            font-size: .75rem !important;
         }
     }
     .mySlides {
